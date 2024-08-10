@@ -1,86 +1,21 @@
 /* styles.css */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('survival-game-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #ffffff; /* Light text color for contrast */
-}
-
-header {
-    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background for the header */
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #d0d0d0; /* Light gray color for links */
-    text-decoration: none;
-    font-size: 18px;
-}
-
-header a:hover {
-    color: #ffb800; /* Gold color on hover */
-}
-
-main {
-    text-align: center;
-    padding: 100px 20px 20px; /* Padding to avoid overlap with header */
-}
-
-h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    color: #ffb800; /* Gold color for heading */
-}
-
-button {
-    background-color: #6d4c41; /* Dark brown color */
-    color: #ffffff;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
-    cursor: pointer;
+.project {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background for project boxes */
     border-radius: 5px;
+    padding: 15px;
     margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-button:hover {
-    background-color: #4e3c2e; /* Darker brown on hover */
+.project h3 {
+    margin-top: 0;
 }
 
-footer {
-    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background for the footer */
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    color: #d0d0d0;
-}
-
-footer a {
+.project a {
     color: #ffb800; /* Gold color for links */
     text-decoration: none;
 }
 
-footer a:hover {
+.project a:hover {
     text-decoration: underline;
 }

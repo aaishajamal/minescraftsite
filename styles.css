@@ -1,61 +1,55 @@
+/* styles.css */
+
 body {
-    background-image: url('survival-game-background.jpg');
+    margin: 0;
+    font-family: 'Press Start 2P', cursive; /* Font similar to the Flutter theme */
+    color: white;
+    background: url('assets/survival-game-background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: #ffffff;
-    font-family: 'Minecraft', sans-serif;
-    cursor: url('minecraft_sword.png'), auto;
 }
 
-header {
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
+    border-radius: 10px;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+.header h1 {
+    color: #39ff14; /* Light green */
+    font-size: 2rem;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.header p {
+    color: #add8e6; /* Light blue */
+    font-size: 1.25rem;
 }
 
-nav ul li a {
-    color: #00ff00;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-main {
-    text-align: center;
-    margin-top: 50px;
-}
-
-main h1 {
-    font-size: 50px;
-    color: #00ff00;
-}
-
-button {
-    background-color: #008000;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-    margin: 10px;
-}
-
-button:hover {
-    background-color: #004d00;
-}
-
-footer {
-    text-align: center;
+.navigation a {
+    display: block;
+    background-color: #6f4f28; /* Brown */
+    color: white;
     padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    margin: 5px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.navigation a:hover {
+    background-color: #4e3a2e; /* Darker brown */
+}
+
+.intro p {
+    font-size: 1rem;
+    color: white;
+    margin-top: 20px;
 }

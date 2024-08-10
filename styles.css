@@ -2,8 +2,8 @@
 
 body {
     margin: 0;
-    font-family: 'Press Start 2P', cursive; /* Font similar to the Flutter theme */
-    color: white;
+    font-family: 'Press Start 2P', cursive; /* Minecraft-like font */
+    color: #e0e0e0; /* Light grey for text */
     background: url('assets/survival-game-background.jpg') no-repeat center center fixed;
     background-size: cover;
     overflow-x: hidden;
@@ -28,13 +28,13 @@ body {
 }
 
 .header h1 {
-    color: #39ff14; /* Light green */
+    color: #c0c0c0; /* Subtle grey */
     font-size: 2.5rem;
     margin: 0;
 }
 
 .header p {
-    color: #add8e6; /* Light blue */
+    color: #a0a0a0; /* Slightly darker grey */
     font-size: 1.5rem;
     margin: 10px 0;
 }
@@ -45,8 +45,8 @@ body {
 
 .nav-button {
     display: inline-block;
-    background-color: #6f4f28; /* Brown */
-    color: white;
+    background-color: #4e4e4e; /* Dark grey */
+    color: #e0e0e0; /* Light grey text */
     padding: 15px 25px;
     margin: 10px;
     text-decoration: none;
@@ -56,7 +56,7 @@ body {
 }
 
 .nav-button:hover {
-    background-color: #4e3a2e; /* Darker brown */
+    background-color: #2e2e2e; /* Darker grey */
     transform: scale(1.05);
 }
 
@@ -67,7 +67,7 @@ body {
 
 footer {
     background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    color: #c0c0c0; /* Light grey for footer text */
     text-align: center;
     padding: 10px;
     position: absolute;

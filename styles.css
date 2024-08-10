@@ -1,13 +1,21 @@
 /* styles.css */
-main section {
-    margin: 20px;
+.blog-post {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background for blog posts */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
+.blog-post h3 {
+    margin-top: 0;
 }
 
-li {
-    margin-bottom: 10px;
+.blog-post a {
+    color: #ffb800; /* Gold color for links */
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
 }

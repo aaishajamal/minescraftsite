@@ -1,17 +1,20 @@
-// JavaScript code for interactive elements
-// For now, we'll add basic functionality
+document.addEventListener("DOMContentLoaded", function() {
+    const repoOwner = 'your-github-username'; // Replace with your GitHub username
+    const repoName = 'your-repo-name'; // Replace with your repository name
 
-// Example: Add some hover effects or interactive features
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('button');
-
-    buttons.forEach(button => {
-        button.addEventListener('mouseover', () => {
-            button.style.backgroundColor = '#004d00'; // Darker green on hover
-        });
-
-        button.addEventListener('mouseout', () => {
-            button.style.backgroundColor = '#008000'; // Original green
-        });
-    });
+    fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/issues`)
+        .then(response => response.json())
+        .then(issues => {
+            const blogContainer = document.getElementById('blog-posts');
+            issues.forEach(issue => {
+                const postElement = document.createElement('article');
+                postElement.classList.add('blog-post');
+                postElement.innerHTML = `
+                    <h3><a href="${issue.html_url}" target="_blank">${issue.title}</a></h3>
+                    <p>${issue.body ? issue.body.substring(0, 200) + '...' : 'No content'}</p>
+                `;
+                blogContainer.appendChild(postElement);
+            });
+        })
+        .catch(error => console.error('Error fetching issues:', error));
 });

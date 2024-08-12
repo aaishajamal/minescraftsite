@@ -1,9 +1,18 @@
+
+
+@font-face {
+    font-family: 'Mojangles';
+    src: url('font/Mojangles.otf') format('opentype'),
+    font-weight: normal;
+    font-style: normal;
+
+    
 /* Background Image */
 body {
     background: url(assets/survival-game-background.jpg) no-repeat center center fixed;
     background-size: cover;
     color: #fff;
-    font-family: 'Minecraft', sans-serif; /* Use a pixelated or blocky font */
+    font-family: 'Monjangles', sans-serif; /* Use a pixelated or blocky font */
     margin: 0;
     padding: 0;
     cursor: url(assets/minecraft_sword.png), auto;
@@ -34,11 +43,6 @@ nav ul li a:hover {
     color: #00cc00;
 }
 
-@font-face {
-    font-family: 'Mojangles';
-    src: url('font/Mojangles.otf') format('opentype'),
-    font-weight: normal;
-    font-style: normal;
 }
 /* Main Content */
 main {

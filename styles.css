@@ -1,18 +1,21 @@
-
-
+/* Define Mojangles Font */
 @font-face {
     font-family: 'Mojangles';
-    src: url('font/Mojangles.otf') format('opentype'),
+    src: url('font/Mojangles.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+}
 
-    
+/* Apply Mojangles Font to Everything */
+body, h1, h2, h3, h4, h5, h6, p, a, nav ul li a, footer, .project-item, button, input, textarea {
+    font-family: 'Mojangles', sans-serif; /* Use Mojangles for all text elements */
+}
+
 /* Background Image */
 body {
     background: url(assets/survival-game-background.jpg) no-repeat center center fixed;
     background-size: cover;
     color: #fff;
-    font-family: 'Monjangles', sans-serif; /* Use a pixelated or blocky font */
     margin: 0;
     padding: 0;
     cursor: url(assets/minecraft_sword.png), auto;
@@ -43,7 +46,6 @@ nav ul li a:hover {
     color: #00cc00;
 }
 
-}
 /* Main Content */
 main {
     text-align: center;
@@ -51,7 +53,6 @@ main {
 }
 
 h1, h3 {
-    font-family: 'Mojangles', sans-serif; /* Replace with your chosen font */
     font-size: 3em;
     text-shadow: 2px 2px #000;
 }

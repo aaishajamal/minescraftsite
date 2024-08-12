@@ -34,6 +34,13 @@ nav ul li a:hover {
     color: #00cc00;
 }
 
+@font-face {
+    font-family: 'Mojangles';
+    src: url('font/Mojangles.otf') format('otf'),
+         url('font/Mojangles.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
 /* Main Content */
 main {
     text-align: center;

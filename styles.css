@@ -37,7 +37,6 @@ nav ul li a:hover {
 @font-face {
     font-family: 'Mojangles';
     src: url('font/Mojangles.otf') format('opentype'),
-         url('font/Mojangles.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }

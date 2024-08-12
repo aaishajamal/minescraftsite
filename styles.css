@@ -1,7 +1,7 @@
 /* Define Mojangles Font */
 @font-face {
     font-family: 'Mojangles';
-    src: url('font/Mojangles.otf') format('opentype');
+    src: url('font/mojangles.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }

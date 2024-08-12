@@ -42,6 +42,26 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Style for the LinkedIn posts section */
+/* Style for the LinkedIn posts section */
+#linkedin-posts {
+    width: 50%; /* Half the width of the page */
+    height: 50vh; /* Half the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: Semi-transparent background */
+    border: 1px solid #ccc; /* Optional: Border for visibility */
+    padding: 10px;
+    margin: 0 auto; /* Center the div horizontally */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+/* Style for other sections, if needed */
+section#blog-posts {
+    margin-top: 20px;
+}
+
+
 nav ul li a:hover {
     color: #00cc00;
 }

@@ -1,0 +1,19 @@
+document.getElementById('start-quest-button').addEventListener('click', function() {
+    document.getElementById('character-creation').style.display = 'block';
+});
+
+document.getElementById('character-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get user inputs
+    const name = document.getElementById('character-name').value;
+    const characterClass = document.getElementById('character-class').value;
+    const color = document.getElementById('character-color').value;
+
+    // Placeholder for further action (e.g., storing character data, transitioning to next section)
+    alert(`Character Created!\nName: ${name}\nClass: ${characterClass}\nColor: ${color}`);
+
+    // Transition to the next part of the quest or hide the creation form
+    document.getElementById('character-creation').style.display = 'none';
+    // Optionally, add code to guide the user to the next part of the quest
+});
